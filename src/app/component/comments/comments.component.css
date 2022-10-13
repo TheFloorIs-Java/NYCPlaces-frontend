@@ -1,0 +1,11 @@
+li{
+    border-color: #2C3A41;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 1.5em;
+    background-image: linear-gradient(cyan, white);
+}
+ul{
+    margin-top: 10px;
+}

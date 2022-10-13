@@ -1,10 +1,8 @@
 <ul *ngFor="let place of places">
   <li>
-    <h2>{{ place.title }}</h2>
-    <p>{{ place.comments }}</p>
-    <!-- <ul *ngFor="let comment of place.comments">
-      <li>{{ comment.comment }}</li>
-    </ul> -->
-    <app-comments [cPlace]="place"></app-comments>
+    <a [routerLink]="['/places', place.id]">{{ place.title }}</a>
+    <br />
+    <!-- <input type="file" (change)="onFileSelected($event)" />
+    <button type="button" (click)="(onUpload)">Upload</button> -->
   </li>
 </ul>

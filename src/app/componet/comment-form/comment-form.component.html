@@ -1,0 +1,15 @@
+<div class="container">
+  <h3>Leave a Comment</h3>
+  <!-- <div class="noUserAlert" *ngIf="" -->
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <div class="col-md-6 col-md-offset-3 loginBox">
+      <textarea
+        class="form-control"
+        [formControlName]="'commentBox'"
+      ></textarea>
+      <button class="btn btn-success" [disabled]="!form.valid" type="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

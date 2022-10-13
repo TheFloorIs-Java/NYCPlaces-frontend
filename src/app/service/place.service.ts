@@ -12,7 +12,12 @@ export class PlaceService {
 
   PlaceList?: Place[];
 
-getAllPlaces(): Observable<Place[]>{
-  return this.http.get<Place[]>("http://localhost:8080/place");
+  getAllPlaces(): Observable<Place[]>{
+    return this.http.get<Place[]>("http://localhost:8080/place");
   }
+
+  getAPlace(id: Number): Observable<Place>{
+    return this.http.get<Place>("http://localhost:8080/place/"+id);
+  }
+
 }
